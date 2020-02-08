@@ -5,7 +5,7 @@
 install.packages("dplyr")
 library("dplyr")
 install.packages("nycflights13")
-library("nycflights13")
+library("nycflights13") # load teh data
 
 # The data frame `flights` should now be accessible to you.
 # Use functions to inspect it: how many rows and columns does it have?
