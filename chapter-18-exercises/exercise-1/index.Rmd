@@ -1,0 +1,48 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+## This is my Report
+
+This is the code we will look at in class. This is just plain old Markdown that lets you render text in **bold** or _italics_. However, you can put in a block of R code, and the document will show the code and the results!
+
+library(knitter)
+I like writing **report**
+```{r example, echo = FALSE}
+numbers <- runif(1:100)
+hist(numbers)
+numbers_mean <- mean(numbers) # get the mean
+```
+the mean of teh mumbers happen to be **'r numbers_mean'**.
+img_url <- "https://cdn3-www.dogtime.com/assets/uploads/2018/10/puppies-cover.jpg"
+
+img_markdown <- paste ("![puppies](",img_url,")")
+```{r other_chunk, echo = FALSE}
+print(numbers)
+```
